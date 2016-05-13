@@ -1,0 +1,129 @@
+// Bootstrap
+// =========
+
+// You can include less bootstrap components if you like by
+// importing the .less files you want directly, instead of
+// the main bootstrap/bootstrap.less file.
+//
+// Bootstrap can be removed entirely by deleting this line.
+
+@import "bootstrap/bootstrap.less";
+
+// The easiest way to customise Bootstrap variables while
+// being able to easily override the source files with new
+// versions is to override the ones you want in another file.
+//
+// You can also add your own custom variables to this file for
+// use in your site stylesheets.
+
+@import "site/variables.less";
+
+
+// Site Styles
+// ===========
+
+// Add your own site style includes here
+@import "site/layout.less";
+
+/* greek */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Advent Pro Regular'), local('AdventPro-Regular'), url(https://fonts.gstatic.com/s/adventpro/v4/rjFlM5pzkJXhqq9bH4mmJyEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Advent Pro Regular'), local('AdventPro-Regular'), url(https://fonts.gstatic.com/s/adventpro/v4/Xfe7ShDKddJBJE_WqrWHYCEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Advent Pro Regular'), local('AdventPro-Regular'), url(https://fonts.gstatic.com/s/adventpro/v4/rT9jpj7pBpZV6AmssbZKk_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* greek */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Advent Pro Medium'), local('AdventPro-Medium'), url(https://fonts.gstatic.com/s/adventpro/v4/7kBth2-rT8tP40RmMMXMLPH1WsXT1Z-7emv_37NHo8k.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Advent Pro Medium'), local('AdventPro-Medium'), url(https://fonts.gstatic.com/s/adventpro/v4/7kBth2-rT8tP40RmMMXMLGPHx8QIAbG0MeMM9fVyzAY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Advent Pro Medium'), local('AdventPro-Medium'), url(https://fonts.gstatic.com/s/adventpro/v4/7kBth2-rT8tP40RmMMXMLDOo-lJoxoMO4vrg2XwIHQk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Brusher';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Brusher Regular'), local('Brusher-Regular'), url(/fonts/Brusher-Regular.ttf) format('ttf');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+.intro-wrapper {
+	background: black;
+	width: 100%;
+	height: 700px;
+	color: white;
+	position: relative;
+}
+
+.intro-photo {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: transparent url("/images/introbg.jpg");
+	background-position: center;
+	background-size: cover;
+	opacity: 0.7;
+}
+
+.intro-scroll-down {
+    border: 2px solid white;
+    padding: 20px;
+    width: 200px;
+    margin: 0 auto 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: Roboto Slab;
+    font-size: 1.2em;
+}
+
+.intro-text {
+    font-family: Brusher;
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 47%;
+    font-size: 4em;
+}
