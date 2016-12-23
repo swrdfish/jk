@@ -12,6 +12,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+  max-height: 100vh;
 
   > .item {
     display: none;
@@ -215,16 +216,17 @@
 // -----------------------------
 // Hidden by default for smaller viewports
 .carousel-caption {
+  font-size: 5em;
+  font-weight: bold;
+  font-family: "Advent Pro";
   position: absolute;
-  left: 15%;
-  right: 15%;
-  bottom: 20px;
+  left: 50%;
+  top: 50vh;
   z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
   color: @carousel-caption-color;
   text-align: center;
   text-shadow: @carousel-text-shadow;
+  transform: translate(-50vh, -50%);
   & .btn {
     text-shadow: none; // No shadow for button elements in carousel-caption
   }
@@ -256,11 +258,11 @@
   }
 
   // Show and left align the captions
-  .carousel-caption {
-    left: 20%;
-    right: 20%;
-    padding-bottom: 30px;
-  }
+  // .carousel-caption {
+  //   left: 20%;
+  //   right: 20%;
+  //   padding-bottom: 30px;
+  // }
 
   // Move up the indicators
   .carousel-indicators {
