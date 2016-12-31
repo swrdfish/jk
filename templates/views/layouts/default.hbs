@@ -95,6 +95,10 @@
 		<script src="/js/autohidingnavbar.min.js"></script>
 		<script type="text/javascript">
 			$("div.navbar-fixed-top").autoHidingNavbar();
+			$('a[href*=#]').on('click', function(event){
+			    event.preventDefault();
+			    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800, 'swing');
+			});
 		</script>
 		{{{isAdminEditorJS user}}}
 	</body>
