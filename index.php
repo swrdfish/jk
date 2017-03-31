@@ -1,4 +1,7 @@
-<!DOCTYPE html><html lang="en"><head><title>Jhinuk Constructions | Live a better life</title><meta charset="utf-8"><!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]--><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="description" content=""><link rel="shortcut icon" href="img/favicon.ico"><link rel="apple-touch-icon" href="img/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png"><style type="text/css">.loader-mask {
+<!DOCTYPE html><html lang="en"><head><title>Jhinuk Constructions | Live a better life</title><meta charset="utf-8"><!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]--><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="description" content=""><link rel="shortcut icon" href="img/favicon.ico"><link rel="apple-touch-icon" href="img/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png"><style type="text/css">/*-------------------------------------------------------*/
+    /* Preloader
+    /*-------------------------------------------------------*/
+    .loader-mask {
       position: fixed;
       top: 0;
       left: 0;
