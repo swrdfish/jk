@@ -1,4 +1,4 @@
--------------------------------------------------------*/
+/*-------------------------------------------------------*/
 /* General
 /*-------------------------------------------------------*/
 .clearfix {
@@ -1358,7 +1358,6 @@ p {
 .from-blog .customNavigation > a {
   background-color: transparent;
   cursor: pointer;
-  // color: #fff;
   font-size: 24px;
 }
 
@@ -1785,10 +1784,6 @@ p {
 .blog-col h4 a {
   color: #111;
 }
-
-// .from-blog .customNavigation > a {
-//   color: #111;
-// }
 
 .entry-box {
   padding: 40px;
@@ -3938,7 +3933,6 @@ label {
 
 .footer.minimal .copyright {
   display: block;
-  // margin-top: 70px;
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -4130,5 +4124,3 @@ p.footer-address {
 .footer-type-3 a:hover {
   color: #111;
 }
-
-/*# sourceMappingURL=style.css.map 
