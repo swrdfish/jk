@@ -1251,7 +1251,7 @@
   <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script type="text/javascript" src="js/rev-slider.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script> -->
-  <script type="text/javascript" src="build/js/scripts.min.js"></script> -->
+  <script type="text/javascript" src="build/js/script.min.js"></script>
 
   <!-- Google Map -->
   <script type="text/javascript">
