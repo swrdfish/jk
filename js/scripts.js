@@ -92,7 +92,6 @@
 
         // Smooth Scroll Navigation
         $('.local-scroll').localScroll({offset: {top: -60},duration: 1500,easing:'easeInOutExpo', hash: true});
-        $('#goto-projects').localScroll({offset: {top: -60},duration: 1500,easing:'easeInOutExpo', target:'#projects', hash: true});
         $('.local-scroll-no-offset').localScroll({offset: {top: 0},duration: 1500,easing:'easeInOutExpo'});
     }
 
