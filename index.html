@@ -1278,7 +1278,7 @@
         </div>
         <div class="row">
             <span class="copyright text-center">
-              ©2017 Jhinuk Constructions  |  Development by <a href="http://swrdfish.github.io/">Binayak</a> & <a href="http://ghoshbishakh.github.io/">Bishakh</a> 
+              ©2017 Jhinuk Constructions  |  Development by <a href="http://swrdfish.github.io/" target="blank">Binayak</a> & <a href="http://ghoshbishakh.github.io/" target="blank">Bishakh</a> 
             </span>
         </div>
       </div>
@@ -1297,6 +1297,9 @@
   <!-- Google Map -->
   <script type="text/javascript">
     $(document).ready( function(){
+      $.gmap3({
+        key: 'AIzaSyBVPdW-Tg-JvxQMvX9wcbvmyXV5Xq5kWn0'
+      });
 
       var gmapDiv = $("#google-map");
       var gmapMarker = gmapDiv.attr("data-address");
