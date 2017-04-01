@@ -80,11 +80,11 @@
         }]
       })
       .marker({
-        position: [23.669942, 87.692544],
+        position: [23.640888, 87.623902],
         icon: "/img/map_pin.png"
       })
       .infowindow({
-        content: "Jhinuk Constructions, Supermarket, Bolpur"
+        content: "Avihita Apartments, Bolpur"
       })
       .then(function (infowindow) {
         var map = this.get(0);
