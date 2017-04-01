@@ -93,27 +93,4 @@
           infowindow.open(map, marker);
         });
       });
-    });</script><link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic" rel="stylesheet"><link rel="stylesheet" href="/build/css/main.min.css"></body></html>  styles: [
-          {
-          "featureType":"all",
-          "elementType":"all",
-            "stylers":[
-              { "saturation":"-70" }
-            ]
-        }]
-      })
-      .marker({
-        position: [23.669942, 87.692544],
-        icon: "/img/map_pin.png"
-      })
-      .infowindow({
-        content: "Jhinuk Constructions, Supermarket, Bolpur"
-      })
-      .then(function (infowindow) {
-        var map = this.get(0);
-        var marker = this.get(1);
-        marker.addListener('click', function() {
-          infowindow.open(map, marker);
-        });
-      });
     });</script><link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic" rel="stylesheet"><link rel="stylesheet" href="/build/css/main.min.css"></body></html>
