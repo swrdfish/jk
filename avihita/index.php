@@ -93,7 +93,10 @@
           infowindow.open(map, marker);
         });
       });
-    });</script><link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic" rel="stylesheet"><link rel="stylesheet" href="/build/css/main.min.css"></body></html>         "elementType":"all",
+    });</script><link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic" rel="stylesheet"><link rel="stylesheet" href="/build/css/main.min.css"></body></html>  styles: [
+          {
+          "featureType":"all",
+          "elementType":"all",
             "stylers":[
               { "saturation":"-70" }
             ]
