@@ -1292,20 +1292,16 @@
   
 
   <!-- All scripts -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVPdW-Tg-JvxQMvX9wcbvmyXV5Xq5kWn0&region=IN"></script>
   <script type="text/javascript" src="/build/js/script.min.js"></script>
 
   <!-- Google Map -->
   <script type="text/javascript">
     $(document).ready( function(){
-      $.gmap3({
-        key: 'AIzaSyBVPdW-Tg-JvxQMvX9wcbvmyXV5Xq5kWn0'
-      });
-
       var gmapDiv = $("#google-map");
       var gmapMarker = gmapDiv.attr("data-address");
 
       gmapDiv.gmap3({
-        key: 'AIzaSyBVPdW-Tg-JvxQMvX9wcbvmyXV5Xq5kWn0',
         zoom: 16,
         center: [23.6697507,87.6903981],
         oomControl: true,
