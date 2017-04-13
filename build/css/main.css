@@ -6322,6 +6322,16 @@ ol.numbers {
   padding: 8px 22px;
 }
 
+
+.btn.btn-book {
+  color: #bfa67a;
+  border-color: #bfa67a;
+}
+
+.btn.btn-book:hover {
+  color: white;
+}
+
 /* Pie Charts
 -------------------------------------------------------*/
 .pie-chart {
