@@ -261,7 +261,7 @@
                 data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;s:500;"
                 data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;"
                 data-start="1400"
-                style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='/files/avihita_brochure.pdf' id="goto-projects" class='btn btn-lg btn-transparent'>Download Brochure</a>
+                style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='/files/avihita_brochure.pdf' id="goto-projects" class='btn btn-lg btn-transparent' target="blank">Download Brochure</a>
               </div>  
         
             </li> <!-- end slide 2 -->
@@ -1312,7 +1312,7 @@
                 <i class="icon icon-Phone"></i>
               </div>
               <h6>Call Us</h6>
-              <span> 03463-252512 </span>
+              <span> <a href="tel:03463252512">03463-252512 </a></span>
             </div> <!-- end phone number -->
 
             <div class="contact-item">
@@ -1330,15 +1330,15 @@
 
               <div class="row contact-row">
                 <div class="col-md-6 contact-name">
-                  <input name="name" id="name" type="text" placeholder="Your Full Name*">
+                  <input name="name" id="name" type="text" placeholder="Your Full Name*" required="required">
                 </div>
                 <div class="col-md-6 contact-email">
-                  <input name="mail" id="mail" type="email" placeholder="Contact Number*">
+                  <input name="mail" id="mail" type="email" placeholder="Contact Number*" required="required">
                 </div>
               </div>
 
-              <input name="subject" id="subject" type="text" placeholder="Which apartment do you want to book?"> 
-              <textarea name="comment" id="comment" placeholder="Need more information?"></textarea>
+              <input name="subject" id="subject" type="text" placeholder="Your eMail id*" required="required"> 
+              <textarea name="comment" id="comment" placeholder="Which apartment do you want to book?" required="required"></textarea>
               <input type="submit" class="btn btn-lg btn-color btn-submit" value="Book Now" id="submit-message">
               <div id="msg" class="message"></div>
             </form>
