@@ -551,15 +551,20 @@
     submitContact.on('click', function(e){
         e.preventDefault();
 
+        console.log($('#contact-form').serialize());
+
         var $this = $(this);
         
         $.ajax({
             type: "POST",
-            url: 'contact.php',
+            url: 'ajax/mail.php',
             dataType: 'json',
             cache: false,
             data: $('#contact-form').serialize(),
             success: function(data) {
+
+                console.log("Success!");
+                alert("Thank you! We will get back to you soon!");
 
                 if(data.info !== 'error'){
                     $this.parents('form').find('input[type=text],input[type=email],textarea,select').filter(':visible').val('');
