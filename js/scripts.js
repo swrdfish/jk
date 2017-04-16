@@ -553,7 +553,7 @@
         
         $.ajax({
             type: "POST",
-            url: 'ajax/mail.php',
+            url: '/ajax/mail.php',
             cache: false,
             data: $('#contact-form').serialize(),
             success: function(data) {
