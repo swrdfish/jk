@@ -33,12 +33,12 @@
 
     $mail->setFrom('jarvis@jhinukconstructions.in', 'Jarvis - Jhinuk Constructions');
     $mail->addAddress($email, $name);     // Add a recipient
-    $mail->addReplyTo('info@jhinukconstructions.in', 'Information');
+    $mail->addReplyTo('info@jhinukconstructions.in', 'Information - Jhinuk Constructions');
 
     $mail->isHTML(true);                                    // Set email format to HTML
 
     $mail->Subject = 'Welcome';
-    $mail->Body    = '<span style="font-size: 1.2em">Thank you for choosing a better lifestyle. We will get back to you shortly. </span><div style="margin-top: 70px"><img width="100px" src="http://www.jhinukconstructions.in/img/logo_dark.png" /><div style="margin-left: 20px; color: #828282"><br>JHINUK CONSTRUCTIONS,<br>SuperMarket, Block B,<br>Bolpur, Birbhum,<br>PIN: 731204<br><br>Phone: 03463-252512</div></div>';
+    $mail->Body    = '<span style="font-size: 1.2em">Thank you ' . $name . ' for choosing a better lifestyle. We will get back to you shortly. </span><div style="margin-top: 70px"><img width="100px" src="http://www.jhinukconstructions.in/img/logo_dark.png" /><div style="margin-left: 20px; color: #828282"><br>JHINUK CONSTRUCTIONS,<br>SuperMarket, Block B,<br>Bolpur, Birbhum,<br>PIN: 731204<br><br>Phone: 03463-252512</div></div>';
     $mail->AltBody = 'Thank you for choosing a better lifestyle. We will get back to you shortly. - JHINUK CONSTRUCTIONS ';
 
     if(!$mail->send()) {
@@ -75,9 +75,10 @@
     $mail->Port = 587;                                      // TCP port to connect to
 
     $mail->setFrom('jarvis@jhinukconstructions.in', 'Jarvis');
-    // $mail->addAddress('jhinukconstructions@gmail.com', 'Jhinuk Constructions');     // Add a recipient
+    $mail->addAddress('jhinukconstructions@gmail.com', 'Jhinuk Constructions');     // Add a recipient
     $mail->addAddress('ghoshbishakh@gmail.com', 'Bishakh Ghosh');     // Add a recipient
-    $mail->addReplyTo('info@jhinukconstructions.in', 'Information');
+    $mail->addAddress('ghoshbinayak@gmail.com', 'Binayak Ghosh');     // Add a recipient
+    $mail->addReplyTo($email, $name);
 
     $mail->isHTML(true);                                    // Set email format to HTML
 
