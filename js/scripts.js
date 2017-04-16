@@ -545,33 +545,25 @@
     /*  Contact Form
     /* ---------------------------------------------------------------------- */
 
-    var submitContact = $('#submit-message'),
-        message = $('#msg');
-
-    submitContact.on('click', function(e){
+    $('#contact-form').submit(function(e){
         e.preventDefault();
 
-        console.log($('#contact-form').serialize());
-
-        var $this = $(this);
+        var originalText = $('#submit-message').val();
+        $('#submit-message').val('Sending ..');
         
         $.ajax({
             type: "POST",
             url: 'ajax/mail.php',
-            dataType: 'json',
             cache: false,
             data: $('#contact-form').serialize(),
             success: function(data) {
-
-                console.log("Success!");
-                alert("Thank you! We will get back to you soon!");
-
-                if(data.info !== 'error'){
-                    $this.parents('form').find('input[type=text],input[type=email],textarea,select').filter(':visible').val('');
-                    message.hide().removeClass('success').removeClass('error').addClass('success').html(data.msg).fadeIn('slow').delay(5000).fadeOut('slow');
-                } else {
-                    message.hide().removeClass('success').removeClass('error').addClass('error').html(data.msg).fadeIn('slow').delay(5000).fadeOut('slow');
+                $('#submit-message').val('Message Sent!');
+                $('#submit-message').css('background-color', 'rgb(98, 206, 99)');
+                $("#contact-form")[0].reset();
+                setTimeout(function(){
+                    $('#submit-message').css('background-color', '#bfa67a').val(originalText);
                 }
+                ,5000);
             }
         });
     });

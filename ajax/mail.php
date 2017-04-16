@@ -31,7 +31,7 @@
     $mail->SMTPAutoTLS = false;
     $mail->Port = 587;                                      // TCP port to connect to
 
-    $mail->setFrom('jarvis@jhinukconstructions.in', 'Jarvis');
+    $mail->setFrom('jarvis@jhinukconstructions.in', 'Jarvis - Jhinuk Constructions');
     $mail->addAddress($email, $name);     // Add a recipient
     $mail->addReplyTo('info@jhinukconstructions.in', 'Information');
 
@@ -82,7 +82,7 @@
     $mail->isHTML(true);                                    // Set email format to HTML
 
     $mail->Subject = 'Query from jhinukconstructions.in';
-    $mail->Body    = '' . $comment . '-------------------<br> Sender: ' . $name . "<br>" . $email . "<br>" . $contact;
+    $mail->Body    = 'Customer Query From jhinukconstructions.in<br>-------------------<br>' . $comment . '<br>-------------------<br> Sender: ' . $name . "<br>" . $email . "<br>" . $contact;
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     if(!$mail->send()) {
