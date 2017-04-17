@@ -3997,7 +3997,7 @@ p {
 }
 
 .promo-description {
-  padding: 50px 0 50px 50px;
+  padding: 0 0 50px 50px;
   cursor: move;
   cursor: -webkit-grab;
   cursor: -o-grab;
@@ -6792,6 +6792,10 @@ p.footer-address {
 
 .footer-type-3 a:hover {
   color: #111;
+}
+
+.navbar-nav>li>a {
+    padding: 0 19px;
 }
 
 @media (max-width: 1200px) {
