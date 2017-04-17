@@ -150,8 +150,8 @@ the right position for the arrow
 
 .no-touch .cbp-tm-submenu > li > a:hover,
 .no-touch .cbp-tm-submenu > li > a:active {
-	color: #fff;
-	background: #47a3da;
+	color: #000;
+	background: #ddd;
 }
 
 /* the icons (main level menu icon and sublevel icons) */

@@ -63,7 +63,6 @@
 			this.touch = Modernizr.touch;
 			this.menuItems = document.querySelectorAll( '#' + this.el.id + ' > li' );
 			this.submenuItems = document.querySelectorAll( '#' + this.el.id + ' > li > ul > li' );
-			console.log(this.submenuItems);
 			this._initEvents();
 		},
 		_initEvents : function() {
