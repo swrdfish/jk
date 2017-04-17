@@ -80,9 +80,10 @@
   </style>
    <!-- Css -->
   <link rel="stylesheet" href="/build/css/main.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
   <!-- All scripts -->
   <script type="text/javascript" src="/build/js/script.min.js"></script>
-
+  <script src="/js/modernizr.custom.js"></script>
 </head>
 
 <body data-spy="scroll" data-offset="60" data-target=".navbar-fixed-top">
@@ -124,7 +125,7 @@
             <div class="col-md-8 col-xs-12 nav-wrap">
               <div class="collapse navbar-collapse text-center" id="navbar-collapse">
 
-                <ul class="nav navbar-nav local-scroll text-center">
+                <ul  id="cbp-tm-menu" class="nav navbar-nav text-center cbp-tm-menu local-scroll" >
 
                   <li>
                     <a href="/">Home</a>
@@ -136,10 +137,28 @@
                     <a href="#overview">Overview</a>
                   </li>
                   <li>
-                    <a href="#floor-plans">Floor Plans</a>
+                    <a href="#">Floor Layouts</a>
+                    <ul class="cbp-tm-submenu local-scroll">
+                      <li><a href="#site_layout">Site Layout</a></li>
+                      <li><a href="#floor-plans">SWAPNIL AND AABESH</a></li>
+                      <li><a href="#prafulla_tripti_key">PRAFULLA AND TRIPTI</a></li>
+                      <li><a href="#sucheta_uchhas_prabha_key">SUCHETA, UCHHAS AND PRABHA</a></li>
+                      <li><a href="#utsha_dipti_key">UTSHA AND DIPTI</a></li>
+                      <li><a href="#ananda_key">ANANDA | THE ROW BUNGLOWS</a></li>
+                    </ul>
                   </li>                          
                   <li>
-                    <a href="#specs">Specifications</a>
+                    <a href="#">Details</a>
+                    <ul class="cbp-tm-submenu local-scroll">
+                      <li><a href="#specs">Materials</a></li>
+                      <li><a href="#studiospec">Studio Apartment</a></li>
+                      <li><a href="#type1spec">1BHK Type I</a></li>
+                      <li><a href="#type2spec">1BHK Type II</a></li>
+                      <li><a href="#type3spec">1BHK With Terace</a></li>
+                      <li><a href="#duplex1spec">DUPLEX WITH LAWN</a></li>
+                      <li><a href="#duplex2spec">DUPLEX WITH TERRACE</a></li>
+                      <li><a href="#bunglowspec">ROW BUNGALOW</a></li>
+                    </ul>
                   </li>
                   <li>
                     <a href="#booking">Booking</a>
@@ -151,10 +170,10 @@
 
             <div class="menu-socials hidden-sm hidden-xs">
               <ul>
-                <li>
+<!--                 <li>
                   <a href="#"><i class="fa fa-youtube"></i></a>
                 </li>
-                <li>
+ -->                <li>
                   <a href="https://www.facebook.com/jhinukconstructions/" target="blank"><i class="fa fa-facebook"></i></a>
                 </li>
               </ul>
@@ -261,7 +280,7 @@
                 data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;s:500;"
                 data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;"
                 data-start="1400"
-                style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='/files/avihita_brochure.pdf' id="goto-projects" class='btn btn-lg btn-transparent'>Download Brochure</a>
+                style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='/files/avihita_brochure.pdf' id="goto-projects" class='btn btn-lg btn-transparent' target="blank">Download Brochure</a>
               </div>  
         
             </li> <!-- end slide 2 -->
@@ -427,7 +446,7 @@
         </div>
 
         <div class="col-md-8 text-center">
-          <img src="/img/abihita/Edit_View_05.jpg" class="wow fadeInUp"> style="width: 100%"
+          <img src="/img/abihita/Edit_View_05.jpg" class="wow fadeInUp" style="width: 100%"> 
         </div> <!-- end col -->
       </div>
     </div>
@@ -604,7 +623,7 @@
 
 
     <!-- Overview -->
-    <section class="section-wrap works-grid-3-col-wide pb-130 bg-dark">
+    <section class="section-wrap works-grid-3-col-wide pb-130 bg-dark" id="site_layout">
       <div class="container-fluid">
           <div class="row heading">
             <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
@@ -622,7 +641,7 @@
       <div class="container-fluid">
         <div class="row heading">
           <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-            <h2 class="text-center bottom-line">Floor Plans</h2>
+            <h2 class="text-center bottom-line">Floor Layouts</h2>
             <p><br><br></p>
             <h3 class="text-center">Swapnil and Aabesh</h3>
           </div>
@@ -792,7 +811,7 @@
           </div>
         </div>
 
-        <div class="row heading" style="margin-top: 150px">
+        <div class="row heading" style="margin-top: 150px" id="prafulla_tripti_key">
           <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
             <h3 class="text-center">Prafulla and tripti</h3>
           </div>
@@ -897,7 +916,7 @@
         </div>
 
 
-        <div class="row heading" style="margin-top: 150px">
+        <div class="row heading" style="margin-top: 150px" id="sucheta_uchhas_prabha_key">
           <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
             <h3 class="text-center">Sucheta, Uchhas and Prabha</h3>
           </div>
@@ -974,7 +993,7 @@
         </div>    
 
 
-        <div class="row heading" style="margin-top: 150px">
+        <div class="row heading" style="margin-top: 150px" id="utsha_dipti_key">
           <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
             <h3 class="text-center">Utsha and Dipti</h3>
           </div>
@@ -1016,7 +1035,7 @@
         </div>
 
 
-        <div class="row heading" style="margin-top: 150px">
+        <div class="row heading" style="margin-top: 150px" id="ananda_key">
           <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
             <h3 class="text-center">Ananda | The row bunglows</h3>
           </div>
@@ -1267,6 +1286,256 @@
     </section>
 
 
+    <!-- Floor Details -->
+    <section class="section-wrap works-grid-3-col-wide pb-130" id="floor-details">
+      <div class="container-fluid">
+        <div class="row heading">
+          <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3" id="studiospec">
+            <h2 class="text-center bottom-line">Floor Plans and Specifications</h2>
+            <p><br><br></p>
+            <h3 class="text-center">Studio Apartments</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7 text-center">
+            <img src="/img/abihita/floors/STUDIO/STUDIO.jpg" class="wow fadeInUp" style="max-height: 540px; display: inline-block">
+          </div> <!-- end col -->
+
+          <div class="col-md-4 col-md-offset-1 pt-30" style="margin-top: 150px">
+            <h4>Area Specifications</h4>
+            <p class="subheading"> Studio apartments</p>
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  <strong>Carpet Area:</strong> <br>
+                  <strong>Balcony Area:</strong> <br>
+                  <strong>Saleable Area:</strong> <br>
+                </p>                
+              </div>
+              <div class="col-md-6">
+                <p>
+                  308 sq.ft.<br>
+                  30 sq.ft.<br>
+                  451 sq.ft.
+                </p>                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 pt-110 pb-60" id="type1spec">
+            <h3 class="text-center">1BHK Type I</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-7 text-center">
+            <img src="/img/abihita/floors/1BHKTYPEI/1BHKTYPEI.jpg" class="wow fadeInUp" style="max-height: 540px; display: inline-block">
+          </div> <!-- end col -->
+
+          <div class="col-md-4 col-md-offset-1 pt-30" style="margin-top: 150px">
+            <h4>Area Specifications</h4>
+            <p class="subheading">1BHK Type I</p>
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  <strong>Carpet Area:</strong> <br>
+                  <strong>Balcony Area:</strong> <br>
+                  <strong>Saleable Area:</strong> <br>
+                </p>                
+              </div>
+              <div class="col-md-6">
+                <p>
+                  399 sq.ft.<br>
+                  35 sq.ft.<br>
+                  582 sq.ft.
+                </p>                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 pt-110 pb-60" id="type2spec">
+            <h3 class="text-center">1BHK Type II</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-7 text-center">
+            <img src="/img/abihita/floors/1BHKTYPEII/1BHKTYPEII.jpg" class="wow fadeInUp" style="max-height: 540px; display: inline-block">
+          </div> <!-- end col -->
+
+          <div class="col-md-4 col-md-offset-1 pt-30" style="margin-top: 150px">
+            <h4>Area Specifications</h4>
+            <p class="subheading">1BHK Type II</p>
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  <strong>Carpet Area:</strong> <br>
+                  <strong>Balcony Area:</strong> <br>
+                  <strong>Saleable Area:</strong> <br>
+                </p>                
+              </div>
+              <div class="col-md-6">
+                <p>
+                  408 sq.ft.<br>
+                  33 sq.ft.<br>
+                  592 sq.ft.
+                </p>                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 pt-110 pb-60" id="type3spec">
+            <h3 class="text-center">1BHK With Terrace</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-7 text-center">
+            <img src="/img/abihita/floors/1BHKWITHTERRACE/1BHKWITHTERRACE.jpg" class="wow fadeInUp" style="max-height: 540px; display: inline-block">
+          </div> <!-- end col -->
+
+          <div class="col-md-4 col-md-offset-1 pt-30" style="margin-top: 150px">
+            <h4>Area Specifications</h4>
+            <p class="subheading">1BHK With Terrace</p>
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  <strong>Carpet Area:</strong> <br>
+                  <strong>Terrace Area:</strong> <br>
+                  <strong>Saleable Area:</strong> <br>
+                </p>                
+              </div>
+              <div class="col-md-6">
+                <p>
+                  445 sq.ft.<br>
+                  256 sq.ft.<br>
+                  594 sq.ft.<br>
+                </p>                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 pt-110 pb-60" id="duplex1spec">
+              <h3 class="text-center">Duplex With Private Lawn</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img src="/img/abihita/floors/DUPLEXWITHPRIVATELAWN/DUPLEXWITHPRIVATELAWNI.jpg" class="wow fadeInUp" style="max-height: 540px; display: inline-block">
+          </div> <!-- end col -->
+          <div class="col-md-4 text-center">
+            <img src="/img/abihita/floors/DUPLEXWITHPRIVATELAWN/DUPLEXWITHPRIVATELAWNII.jpg" class="wow fadeInUp" style="max-height: 540px; display: inline-block">
+          </div>
+          <div class="col-md-3 pt-30 col-md-offset-1" style="margin-top: 150px">
+            <h4>Area Specifications</h4>
+            <p class="subheading">Duplex With Private Lawn</p>
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  <strong>Carpet Area:</strong> <br>
+                  <strong>Balcony Area:</strong> <br>
+                  <strong>Lawn Area:</strong> <br>
+                  <strong>Saleable Area:</strong> <br>
+                </p>                
+              </div>
+              <div class="col-md-6">
+                <p>
+                  477 sq.ft.<br>
+                  52 sq.ft.<br>
+                  150 sq.ft.<br>
+                  715 sq.ft.<br>
+                </p>                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 pt-110 pb-60" id="duplex2spec">
+              <h3 class="text-center">Duplex With Terrace</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <img src="/img/abihita/floors/DUPLEXWITHTERRACE/DUPLEXWITHTERRACEI.jpg" class="wow fadeInUp" style="max-height: 540px; display: inline-block">
+          </div> <!-- end col -->
+          <div class="col-md-6 text-center">
+            <img src="/img/abihita/floors/DUPLEXWITHTERRACE/DUPLEXWITHTERRACEII.jpg" class="wow fadeInUp" style="max-height: 540px; display: inline-block">
+          </div>
+          <div class="col-md-7 text-center">
+            <img src="/img/abihita/floors/DUPLEXWITHTERRACE/DUPLEXWITHTERRACEIII.jpg" class="wow fadeInUp" style="max-height: 540px; display: inline-block">
+          </div> <!-- end col -->
+          <div class="col-md-4 pt-30 col-md-offset-1" style="margin-top: 150px">
+            <h4>Area Specifications</h4>
+            <p class="subheading">Duplex With Terrace</p>
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  <strong>Carpet Area:</strong> <br>
+                  <strong>Terrace Area:</strong> <br>
+                  <strong>Deck Area:</strong> <br>
+                  <strong>Saleable Area:</strong> <br>
+                </p>                
+              </div>
+              <div class="col-md-6">
+                <p>
+                  926 sq.ft.<br>
+                  376 sq.ft.<br>
+                  163 sq.ft.<br>
+                  1303 sq.ft.<br>
+                </p>                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 pt-110 pb-60" id="duplex1spec">
+              <h3 class="text-center">Row Bungalow With Terrace</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <img src="/img/abihita/floors/ROWBUNGALOWWITHTERRACE/ROWBUNGALOWWITHTERRACEI.jpg" class="wow fadeInUp" style="max-height: 540px; display: inline-block">
+          </div> <!-- end col -->
+          <div class="col-md-6 text-center">
+            <img src="/img/abihita/floors/ROWBUNGALOWWITHTERRACE/ROWBUNGALOWWITHTERRACEII.jpg" class="wow fadeInUp" style="max-height: 540px; display: inline-block">
+          </div>
+          <div class="col-md-7 text-center">
+            <img src="/img/abihita/floors/ROWBUNGALOWWITHTERRACE/ROWBUNGALOWWITHTERRACEIII.jpg" class="wow fadeInUp" style="max-height: 540px; display: inline-block">
+          </div> <!-- end col -->
+          <div class="col-md-4 pt-30 col-md-offset-1" style="margin-top: 150px">
+            <h4>Area Specifications</h4>
+            <p class="subheading">Row Bungalow With Terrace</p>
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  <strong>Carpet Area:</strong> <br>
+                  <strong>Balcony Ground Fl.:</strong> <br>
+                  <strong>Balcony 1st Fl.:</strong> <br>
+                  <strong>Terrace Area:</strong> <br>
+                  <strong>Lawn Area:</strong> <br>
+                  <strong>Saleable Area:</strong> <br>
+                </p>                
+              </div>
+              <div class="col-md-6">
+                <p>
+                  1278 sq.ft.<br>
+                  49 sq.ft.<br>
+                  101 sq.ft.<br>
+                  200 sq.ft.<br>
+                  229 sq.ft.<br>
+                  1877 sq.ft.<br>
+                </p>                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
     <!-- Google Map -->
     <section class="section-wrap pb-0">
       <div class="row heading">
@@ -1276,7 +1545,6 @@
       </div>
       <div id="google-map" class="gmap" data-address="ChIJYUaKHbTc-TkR0o_XvhM7xbU&key=AIzaSyCXvK62_JQ1ovhatpCXpH12mrQevp_WIto"></div>      
     </section>
-
 
 
     <!-- Booking -->
@@ -1294,7 +1562,7 @@
 
           <div class="col-md-4">
             <h5>Get in Touch</h5>
-            <p>Mon-Fri: 8:00 – 20:00</p>
+            <p>Mon-Fri: 10:00 – 17:00</p>
 
             <div class="contact-item">
               <div class="contact-icon">
@@ -1302,7 +1570,7 @@
               </div>
               <h6>Address</h6>
               <p>JHINUK CONSTRUCTIONS,<br>
-              SuperMarket, Block B,<br>
+              SuperMarket, Block A,<br>
              Bolpur, Birbhum,<br>
              PIN: 731204</p>
             </div> <!-- end address -->
@@ -1312,7 +1580,7 @@
                 <i class="icon icon-Phone"></i>
               </div>
               <h6>Call Us</h6>
-              <span> 03463-252512 </span>
+              <span> <a href="tel:03463252512">03463-252512 </a></span>
             </div> <!-- end phone number -->
 
             <div class="contact-item">
@@ -1330,15 +1598,15 @@
 
               <div class="row contact-row">
                 <div class="col-md-6 contact-name">
-                  <input name="name" id="name" type="text" placeholder="Your Full Name*">
+                  <input name="name" id="name" type="text" placeholder="Your Full Name" required="required">
                 </div>
                 <div class="col-md-6 contact-email">
-                  <input name="mail" id="mail" type="email" placeholder="Contact Number*">
+                  <input name="contactno" id="contactno" type="tel" placeholder="Contact Number" required="required">
                 </div>
               </div>
 
-              <input name="subject" id="subject" type="text" placeholder="Which apartment do you want to book?"> 
-              <textarea name="comment" id="comment" placeholder="Need more information?"></textarea>
+              <input name="email" id="email" type="email" placeholder="Your eMail id" required="required"> 
+              <textarea name="comment" id="comment" placeholder="Which apartment do you want to book?" required="required"></textarea>
               <input type="submit" class="btn btn-lg btn-color btn-submit" value="Book Now" id="submit-message">
               <div id="msg" class="message"></div>
             </form>
@@ -1368,7 +1636,7 @@
             <span class="copyright text-center">
               ©2017 Jhinuk Constructions  |  Development by <a href="http://swrdfish.github.io/" target="blank">Binayak</a> & <a href="http://ghoshbishakh.github.io/" target="blank">Bishakh</a> 
             </span> <br>
-            <span class="copyright text-center"> This site only describes the intent, purpose and concept of Jhinuk Constructions.</span>
+            <span class="copyright text-center"> This site only describes the intent, purpose and concept of Jhinuk Constructions. This is not a legal document.</span>
         </div>
       </div>
     </footer> <!-- end footer -->
@@ -1420,7 +1688,10 @@
       });
     });
   </script>
-
+  <script src="/js/cbpTooltipMenu.js"></script>
+  <script type="text/javascript">
+    mycbpmenu = new cbpTooltipMenu( document.getElementById( 'cbp-tm-menu' ) );
+  </script>
   <!-- Google Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
 
