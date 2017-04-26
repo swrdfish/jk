@@ -1152,7 +1152,7 @@ p {
 }
 
 .statistic span {
-  font-size: 36px;
+  font-size: 26px;
   font-family: "Montserrat", sans-serif;
   color: #fff;
   display: block;
@@ -1277,7 +1277,7 @@ p {
 }
 
 .promo-description {
-  padding: 50px 0 50px 50px;
+  padding: 0 0 50px 50px;
   cursor: move;
   cursor: -webkit-grab;
   cursor: -o-grab;
