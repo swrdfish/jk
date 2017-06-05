@@ -1,38 +1,4 @@
-/* reset  list style */
-./*cbp-tm-menu,
-.cbp-tm-menu ul {
-	list-style: none;
-}*/
-
 /* set menu position; change here to set to relative or float, etc. */
-.cbp-tm-menu {
-	/*display: block;*/
-	position: absolute;
-	z-index: 1000;
-	bottom: 0;
-	width: 100%;
-	/*background: #47a3da;*/
-	/*text-align: right;*/
-	/*padding: 0 2em;*/
-	/*margin: 0;*/
-	/*text-transform: capitalize;*/
-}
-
-/* first level menu items */
-./*cbp-tm-menu > li {
-	display: inline-block;
-	margin: 0 2.6em;
-	position: relative;
-}*/
-/*
-.cbp-tm-menu > li > a {
-	line-height: 4em;
-	padding: 0 0.3em;
-	font-size: 1.2em;
-	display: block;
-	color: #fff;
-}*/
-
 .no-touch .cbp-tm-menu > li > a:hover,
 .no-touch .cbp-tm-menu > li > a:active {
 	color: #02639d;
@@ -154,101 +120,7 @@ the right position for the arrow
 	background: #ddd;
 }
 
-/* the icons (main level menu icon and sublevel icons) */
-/*.cbp-tm-submenu li a:before,
-.cbp-tm-menu > li > a:before {
-	font-family: 'cbp-tmicons';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	vertical-align: middle;
-	margin-right: 0.6em;
-	-webkit-font-smoothing: antialiased;
-}
-*/
-/*.cbp-tm-submenu li a:before {
-	position: absolute;
-	top: 50%;
-	margin-top: -0.5em;
-	right: 0.5em;
-}
 
-.cbp-tm-menu > li > a:not(:only-child):before {
-	content: "\f0c9";
-	font-size: 60%;
-	opacity: 0.3;
-}
-
-.cbp-tm-icon-archive:before {
-	content: "\e002";
-}
-
-.cbp-tm-icon-cog:before {
-	content: "\e003";
-}
-
-.cbp-tm-icon-users:before {
-	content: "\e004";
-}
-
-.cbp-tm-icon-earth:before {
-	content: "\e005";
-}
-
-.cbp-tm-icon-location:before {
-	content: "\e006";
-}
-
-.cbp-tm-icon-mobile:before {
-	content: "\e007";
-}
-
-.cbp-tm-icon-screen:before {
-	content: "\e008";
-}
-
-.cbp-tm-icon-mail:before {
-	content: "\e009";
-}
-
-.cbp-tm-icon-contract:before {
-	content: "\e00a";
-}
-
-.cbp-tm-icon-pencil:before {
-	content: "\e00b";
-}
-
-.cbp-tm-icon-article:before {
-	content: "\e00c";
-}
-
-.cbp-tm-icon-clock:before {
-	content: "\e00d";
-}
-
-.cbp-tm-icon-videos:before {
-	content: "\e00e";
-}
-
-.cbp-tm-icon-pictures:before {
-	content: "\e00f";
-}
-
-.cbp-tm-icon-link:before {
-	content: "\e010";
-}
-
-.cbp-tm-icon-refresh:before {
-	content: "\e011";
-}
-
-.cbp-tm-icon-help:before {
-	content: "\e012";
-}*/
 
 /* Media Queries */
 @media screen and (max-width: 55.6875em) {
@@ -257,7 +129,7 @@ the right position for the arrow
 	}
 }
 
-@media screen and (max-height: 25.25em), screen and (max-width: 44.3125em) {
+@media screen and (max-height: 25.25em), screen and (max-width: 991px) {
 
 	.cbp-tm-menu {
 		/*font-size: 100%;*/
@@ -286,18 +158,13 @@ the right position for the arrow
 
 	.cbp-tm-submenu {
 		position: relative;
-		display: none;
+		overflow: hidden;
 		width: 100%;
+		display: none;
 	}
 
 	.cbp-tm-submenu > li {
 		padding: 0;
-	}
-
-	.cbp-tm-submenu > li > a {
-		padding: 0.6em 2.3em 0.6em 0.6em;
-		border: none;
-		border-bottom: 2px solid #6fbbe9;
 	}
 
 	.cbp-tm-submenu:after {
@@ -306,7 +173,9 @@ the right position for the arrow
 
 	.cbp-tm-menu .cbp-tm-show .cbp-tm-submenu {
 		display: block;
-		/*width: 100%;*/
+		overflow: hidden;
+		width: 100%;
+		position: relative;
 		left: 0;
 		margin: 0;
 		padding: 0;
