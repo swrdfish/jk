@@ -394,7 +394,6 @@ p {
 
 .navbar-nav > li > a:hover,
 .navbar-nav > .active > a,
-.navbar-nav > .active > a:focus,
 .navbar-nav > .active > a:hover,
 .menu-socials li > a:hover {
   opacity: 1;
@@ -4072,4 +4071,15 @@ p.footer-address {
 
 .footer-type-3 a:hover {
   color: #111;
+}
+
+#specs li {
+  list-style: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 991px) {
+  #specs .col-sm-7 {
+    padding-left: 45px; 
+  }
 }
