@@ -3114,7 +3114,6 @@ p {
 
 .navbar-nav > li > a:hover,
 .navbar-nav > .active > a,
-.navbar-nav > .active > a:focus,
 .navbar-nav > .active > a:hover,
 .menu-socials li > a:hover {
   opacity: 1;
@@ -6794,13 +6793,33 @@ p.footer-address {
   color: #111;
 }
 
+#specs li {
+  list-style: none;
+  font-weight: bold;
+}
+
+.area-spec {
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 991px) {
+  #specs .col-sm-7 {
+    padding-left: 45px; 
+  }
+
+  .area-spec {
+    margin-top: 0;
+  }
+}
+
+
 .navbar-nav>li>a {
     padding: 0 19px;
 }
 
 @media (max-width: 1200px) {
   .navbar-nav > li > a {
-    padding: 0 13px;
+    padding: 0 9px;
   }
   .works-grid-3-col-wide .container-fluid {
     padding: 0 13px;

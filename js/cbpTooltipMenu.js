@@ -74,31 +74,15 @@
 				if( self.touch ) {
 					trigger.addEventListener( 'click', function( ev ) { self._handleClick( this, ev ); } );
 				}
-				el.addEventListener( 'mouseover', function(ev) { if( isMouseLeaveOrEnter( ev, this ) ) self._openMenu( this ); } );
-				el.addEventListener( 'mouseout', function(ev) { if( isMouseLeaveOrEnter( ev, this ) ) self._closeMenu( this ); } );
-				// else {
-					// trigger.addEventListener( 'click', function( ev ) {
-				// if( el.parentNode.querySelector( 'ul.cbp-tm-submenu' ) ) {
-				// 	ev.preventDefault();
-				// }
-					// } );
-				// }
-			} );
-
-			Array.prototype.slice.call( this.menuItems ).forEach( function( el, i ) {
-				// var trigger = el.querySelector( 'a' );
-				// if( self.touch ) {
-				// 	trigger.addEventListener( 'click', function( ev ) { self._handleClick( this, ev ); } );
-				// }
-				// el.addEventListener( 'click', function(ev) { if( isMouseLeaveOrEnter( ev, this ) ) self._openMenu( this ); } );
-				el.addEventListener( 'click', function(ev) { self._closeMenu( this ); });
-				// else {
-					// trigger.addEventListener( 'click', function( ev ) {
-				// if( el.parentNode.querySelector( 'ul.cbp-tm-submenu' ) ) {
-				// 	ev.preventDefault();
-				// }
-					// } );
-				// }
+				else {
+					trigger.addEventListener( 'click', function( ev ) {
+						if( el.parentNode.querySelector( 'ul.cbp-tm-submenu' ) ) {
+							ev.preventDefault();
+						}
+					} );
+					el.addEventListener( 'mouseover', function(ev) { if( isMouseLeaveOrEnter( ev, this ) ) self._openMenu( this ); } );
+					el.addEventListener( 'mouseout', function(ev) { if( isMouseLeaveOrEnter( ev, this ) ) self._closeMenu( this ); } );
+				}
 			} );
 		},
 		_openMenu : function( el ) {
@@ -107,6 +91,19 @@
 			clearTimeout( this.omtimeout );
 			this.omtimeout = setTimeout( function() {
 				var submenu = el.querySelector( 'ul.cbp-tm-submenu' );
+
+				if(self.touch) {
+					var origHeight = submenu.getAttribute('data-height'); 
+					if(origHeight === null) {
+						origHeight = $(submenu).height();
+						submenu.setAttribute( 'data-height', origHeight );
+					}
+					else {
+						origHeight = parseInt(origHeight, 10);
+					}
+
+					$(submenu).height(0);
+				}
 
 				if( submenu ) {
 					el.className = 'cbp-tm-show';
@@ -117,6 +114,14 @@
 						el.className += ' cbp-tm-show-below';
 					}
 				}
+				
+				if(self.touch) {
+					$(submenu).stop(true, true);
+					$(submenu).animate({
+						height: origHeight
+					}, 500);
+				}
+
 			}, this.touch ? 0 : this.options.delayMenu );
 
 		},
@@ -126,18 +131,35 @@
 
 			var submenu = el.querySelector( 'ul.cbp-tm-submenu' );
 
-			if( submenu ) {
-				// based on https://github.com/desandro/classie/blob/master/classie.js
-				el.className = el.className.replace(new RegExp("(^|\\s+)" + "cbp-tm-show" + "(\\s+|$)"), ' ');
-				el.className = el.className.replace(new RegExp("(^|\\s+)" + "cbp-tm-show-below" + "(\\s+|$)"), ' ');
-				el.className = el.className.replace(new RegExp("(^|\\s+)" + "cbp-tm-show-above" + "(\\s+|$)"), ' ');
+			if(this.touch) {
+				$(submenu).stop(true, true);
+				$(submenu).animate({
+					height: 0
+				}, 500, function(){
+					if( submenu ) {
+						// based on https://github.com/desandro/classie/blob/master/classie.js
+						el.className = el.className.replace(new RegExp("(^|\\s+)" + "cbp-tm-show" + "(\\s+|$)"), ' ');
+						el.className = el.className.replace(new RegExp("(^|\\s+)" + "cbp-tm-show-below" + "(\\s+|$)"), ' ');
+						el.className = el.className.replace(new RegExp("(^|\\s+)" + "cbp-tm-show-above" + "(\\s+|$)"), ' ');
+					}
+				});
 			}
+			
+			else {
+				if( submenu ) {
+					// based on https://github.com/desandro/classie/blob/master/classie.js
+					el.className = el.className.replace(new RegExp("(^|\\s+)" + "cbp-tm-show" + "(\\s+|$)"), ' ');
+					el.className = el.className.replace(new RegExp("(^|\\s+)" + "cbp-tm-show-below" + "(\\s+|$)"), ' ');
+					el.className = el.className.replace(new RegExp("(^|\\s+)" + "cbp-tm-show-above" + "(\\s+|$)"), ' ');
+				}				
+			}
+
 
 		},
 		_handleClick : function( el, ev ) {
 			var item = el.parentNode,
 				items = Array.prototype.slice.call( this.menuItems ),
-				submenu = item.querySelector( 'ul.cbp-tm-submenu' )
+				submenu = item.querySelector( 'ul.cbp-tm-submenu' );
 
 			// first close any opened one..
 			if( typeof this.current !== 'undefined' &&  items.indexOf( item ) !== this.current ) {
@@ -147,6 +169,8 @@
 
 			if( submenu ) {
 				ev.preventDefault();
+				ev.stopPropagation();
+				ev.stopImmediatePropagation();
 
 				var isOpen = submenu.getAttribute( 'data-open' );
 
