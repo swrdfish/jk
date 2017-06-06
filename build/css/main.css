@@ -6798,11 +6798,21 @@ p.footer-address {
   font-weight: bold;
 }
 
+.area-spec {
+  margin-top: 150px;
+}
+
 @media screen and (max-width: 991px) {
   #specs .col-sm-7 {
     padding-left: 45px; 
   }
+
+  .area-spec {
+    margin-top: 0;
+  }
 }
+
+
 .navbar-nav>li>a {
     padding: 0 19px;
 }
