@@ -178,19 +178,28 @@
     $('#aapayan-gallery').magnificPopup({
         items: [
             {
+                src: '/img/aapayan/allviews/banner.jpg'
+            },
+            {
                 src: '/img/aapayan/allviews/1.jpg'
+            },
+            {
+                src: '/img/aapayan/allviews/5.jpg'
             },
             {
                 src: '/img/aapayan/allviews/2.jpg'
             },
             {
-                src: '/img/aapayan/allviews/3.jpg'
+                src: '/img/aapayan/aapayan22.jpg'
             },
             {
-                src: '/img/aapayan/allviews/4.jpg'
+                src: '/img/aapayan/aapayan23.jpg'
             },
             {
-                src: '/img/aapayan/allviews/5.jpg'
+                src: '/img/aapayan/aapayan24.jpg'
+            },
+            {
+                src: '/img/aapayan/aapayan21.jpg'
             }
         ],
         type: 'image',
@@ -213,7 +222,10 @@
                 src: '/img/parichoy/parichoy1.jpg'
             },
             {
-                src: '/img/parichoy/parichoy3.jpg'
+                src: '/img/parichoy/parichoy2.jpg'
+            },
+            {
+                src: '/img/parichoy/parichoy4.jpg'
             }
         ],
         type: 'image',
@@ -232,16 +244,19 @@
     $('#alapan-gallery').magnificPopup({
         items: [
             {
-                src: '/img/alapan/alapan1.jpg'
+                src: '/img/alapan/alapan.jpg'
+            },
+            {
+                src: '/img/alapan/alapan21.jpg'
+            },
+            {
+                src: '/img/alapan/alapan22.jpg'
             },
             {
                 src: '/img/alapan/alapan2.jpg'
             },
             {
-                src: '/img/alapan/alapan.jpg'
-            },
-            {
-                src: '/img/alapan/alapan6.jpg'
+                src: '/img/alapan/alapan23.jpg'
             }
         ],
         type: 'image',
