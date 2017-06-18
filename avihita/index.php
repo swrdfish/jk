@@ -1,4 +1,36 @@
-<!DOCTYPE html><html lang="en"><head><title>Avihita | Jhinuk Constructions</title><meta charset="utf-8"><!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]--><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="description" content="Avihita offers comfortable studio apartments, spacious one BHK apartments and gracious Duplex bungalows and Row bungalows. Surrounded by the serenity and tranquality of rural Bengal and soaked in the rich cultural heritage of Santiniketan, Avihita is perfect as a peaceful weekend gateway or a quiet uninterrupted retirement."><meta property="og:title" content="Avihita | Jhinuk Constructions"><meta property="og:type" content="website"><meta property="og:url" content="http://jhinukconstructions.in/avihita/"><meta property="og:image" content="http://jhinukconstructions.in/img/abihita/abihita3.jpg"><meta property="og:description" content="Avihita offers comfortable studio apartments, spacious one BHK apartments and gracious Duplex bungalows and Row bungalows. Surrounded by the serenity and tranquality of rural Bengal and soaked in the rich cultural heritage of Santiniketan, Avihita is perfect as a peaceful weekend gateway or a quiet uninterrupted retirement."><link rel="shortcut icon" href="/img/favicon.ico"><link rel="apple-touch-icon" href="/img/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png"><style type="text/css">/*-------------------------------------------------------*/
+<!DOCTYPE html><html lang="en"><head><title>Avihita | Jhinuk Constructions</title><meta charset="utf-8"><!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]--><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="description" content="Avihita offers comfortable studio apartments, spacious one BHK apartments and gracious Duplex bungalows and Row bungalows. Surrounded by the serenity and tranquality of rural Bengal and soaked in the rich cultural heritage of Santiniketan, Avihita is perfect as a peaceful weekend gateway or a quiet uninterrupted retirement."><meta property="og:title" content="Avihita | Jhinuk Constructions"><meta property="og:type" content="website"><meta property="og:url" content="http://jhinukconstructions.in/avihita/"><meta property="og:image" content="http://jhinukconstructions.in/img/abihita/abihita3.jpg"><meta property="og:description" content="Avihita offers comfortable studio apartments, spacious one BHK apartments and gracious Duplex bungalows and Row bungalows. Surrounded by the serenity and tranquality of rural Bengal and soaked in the rich cultural heritage of Santiniketan, Avihita is perfect as a peaceful weekend gateway or a quiet uninterrupted retirement."><script type="application/ld+json">{
+    "@context": "http://schema.org/",
+    "@type": "Product",
+    "name": "Avihita",
+    "image": "https://jhinukconstructions.in/img/abihita/abihitaslide2.jpg",
+    "description": "Avihita offers comfortable studio apartments, spacious one BHK apartments and gracious Duplex bungalows and Row bungalows. Surrounded by the serenity and tranquality of rural Bengal and soaked in the rich cultural heritage of Santiniketan, Avihita is perfect as a peaceful weekend gateway or a quiet uninterrupted retirement.",
+    "brand": {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Jhinuk Constructions",
+    "url": "https://jhinukconstructions.in/",
+    "sameAs": [
+      "https://www.youtube.com/channel/UClUpUARzIliSrdl6kl3Fjsw",
+      "https://www.facebook.com/jhinukconstructions/"
+    ],
+    "logo": "https://jhinukconstructions.in/img/jhinuk_logo.png",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+91-03463-252512",
+      "contactType": "customer service"
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+91-7699551553",
+      "contactType": "customer service"
+    }]
+  },
+    "url": "https://jhinukconstructions.in/avihita",
+    "sameAs": [
+      "https://www.youtube.com/channel/UClUpUARzIliSrdl6kl3Fjsw",
+      "https://www.facebook.com/jhinukconstructions/"
+    ]
+  }</script><link rel="shortcut icon" href="/img/favicon.ico"><link rel="apple-touch-icon" href="/img/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png"><style type="text/css">/*-------------------------------------------------------*/
     /* Preloader
     /*-------------------------------------------------------*/
     .loader-mask {
