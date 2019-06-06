@@ -3,3 +3,7 @@
 # Allow crawling of all content
 User-agent: *
 Disallow:
+
+#Begin Attracta SEO Tools Sitemap. Do not remove
+sitemap: http://cdn.attracta.com/sitemap/5209712.xml.gz
+#End Attracta SEO Tools Sitemap. Do not remove

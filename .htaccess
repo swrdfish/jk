@@ -73,7 +73,6 @@
 #     Header set Timing-Allow-Origin: "*"
 # </IfModule>
 
-
 # ######################################################################
 # # ERRORS                                                             #
 # ######################################################################
@@ -99,7 +98,6 @@ ErrorDocument 404 /404.html
 # https://httpd.apache.org/docs/current/content-negotiation.html#multiviews
 
 Options -MultiViews
-
 
 # ######################################################################
 # # INTERNET EXPLORER                                                  #
@@ -149,7 +147,6 @@ Options -MultiViews
 #     Header set P3P "policyref=\"/w3c/p3p.xml\", CP=\"IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT\""
 # </IfModule>
 
-
 # ######################################################################
 # # MEDIA TYPES AND CHARACTER ENCODINGS                                #
 # ######################################################################
@@ -174,7 +171,6 @@ Options -MultiViews
     AddType application/vnd.geo+json                    geojson
     AddType application/xml                             rdf xml
 
-
   # JavaScript
 
     # Normalize to standard type.
@@ -182,13 +178,11 @@ Options -MultiViews
 
     AddType application/javascript                      js
 
-
   # Manifest files
 
     AddType application/manifest+json                   webmanifest
     AddType application/x-web-app-manifest+json         webapp
     AddType text/cache-manifest                         appcache
-
 
   # Media files
 
@@ -208,7 +202,6 @@ Options -MultiViews
 
     AddType image/x-icon                                cur ico
 
-
   # Web fonts
 
     AddType application/font-woff                       woff
@@ -225,7 +218,6 @@ Options -MultiViews
 
     AddType application/x-font-ttf                      ttc ttf
     AddType font/opentype                               otf
-
 
   # Other
 
@@ -277,7 +269,6 @@ AddDefaultCharset utf-8
                      .xloc \
                      .xml
 </IfModule>
-
 
 # ######################################################################
 # # REWRITES                                                           #
@@ -336,8 +327,14 @@ AddDefaultCharset utf-8
 
     # (6)
     RewriteCond %{HTTPS} =on
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
     RewriteRule ^ - [env=proto:https]
     RewriteCond %{HTTPS} !=on
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
     RewriteRule ^ - [env=proto:http]
 
 </IfModule>
@@ -381,6 +378,9 @@ AddDefaultCharset utf-8
     RewriteEngine On
     RewriteCond %{HTTPS} !=on
     RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
     RewriteRule ^ %{ENV:PROTO}://%1%{REQUEST_URI} [R=301,L]
 </IfModule>
 
@@ -399,7 +399,6 @@ AddDefaultCharset utf-8
 #     RewriteCond %{SERVER_ADDR} !=::1
 #     RewriteRule ^ %{ENV:PROTO}://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 # </IfModule>
-
 
 # ######################################################################
 # # SECURITY                                                           #
@@ -524,6 +523,9 @@ AddDefaultCharset utf-8
     RewriteCond %{REQUEST_URI} "!(^|/)\.well-known/([^./]+./?)+$" [NC]
     RewriteCond %{SCRIPT_FILENAME} -d [OR]
     RewriteCond %{SCRIPT_FILENAME} -f
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
     RewriteRule "(^|/)\." - [F]
 </IfModule>
 
@@ -705,7 +707,6 @@ ServerSignature Off
 
 #ServerTokens Prod
 
-
 # ######################################################################
 # # WEB PERFORMANCE                                                    #
 # ######################################################################
@@ -853,7 +854,6 @@ FileETag None
 
     ExpiresByType text/css                              "access plus 1 year"
 
-
   # Data interchange
 
     ExpiresByType application/atom+xml                  "access plus 1 hour"
@@ -867,7 +867,6 @@ FileETag None
     ExpiresByType application/xml                       "access plus 0 seconds"
     ExpiresByType text/xml                              "access plus 0 seconds"
 
-
   # Favicon (cannot be renamed!) and cursor images
 
     ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
@@ -877,20 +876,17 @@ FileETag None
 
     ExpiresByType text/html                             "access plus 0 seconds"
 
-
   # JavaScript
 
     ExpiresByType application/javascript                "access plus 1 year"
     ExpiresByType application/x-javascript              "access plus 1 year"
     ExpiresByType text/javascript                       "access plus 1 year"
 
-
   # Manifest files
 
     ExpiresByType application/manifest+json             "access plus 1 week"
     ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
     ExpiresByType text/cache-manifest                   "access plus 0 seconds"
-
 
   # Media files
 
@@ -904,7 +900,6 @@ FileETag None
     ExpiresByType video/mp4                             "access plus 1 month"
     ExpiresByType video/ogg                             "access plus 1 month"
     ExpiresByType video/webm                            "access plus 1 month"
-
 
   # Web fonts
 
@@ -925,7 +920,6 @@ FileETag None
 
     # Web Open Font Format (WOFF) 2.0
     ExpiresByType application/font-woff2                "access plus 1 month"
-
 
   # Other
 
